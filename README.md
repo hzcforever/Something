@@ -1,1 +1,1 @@
-# CS-Resouce
+# CS-Resource
