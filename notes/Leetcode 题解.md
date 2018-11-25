@@ -4881,7 +4881,7 @@ public List<Integer> preorderTraversal(TreeNode root) {
 
 **非递归实现二叉树的后序遍历** 
 
-[145. Binary Tree Postorder Traversal (Medium)](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
+[145. Binary Tree Postorder Traversal (Hard)](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 
 前序遍历为 root -> left -> right，后序遍历为 left -> right -> root。可以修改前序遍历成为 root -> right -> left，那么这个顺序就和后序遍历正好相反。
 
