@@ -230,7 +230,7 @@ AOF重写是一个有歧义的名字，该功能是通过读取数据库中的�
 
 **更多内容可以查看我的这篇文章：**
 
-- [https://github.com/Snailclimb/JavaGuide/blob/master/数据存储/Redis/Redis持久化.md](https://github.com/Snailclimb/JavaGuide/blob/master/数据存储/Redis/Redis持久化.md)
+- [https://github.com/hzcforever/Something/blob/master/docs/database/Redis/Redis持久化.md](https://github.com/hzcforever/Something/blob/master/docs/database/Redis/Redis%E6%8C%81%E4%B9%85%E5%8C%96.md)
 
 
 ### redis 事务
@@ -287,12 +287,6 @@ Redis 通过 MULTI、EXEC、WATCH 等命令来实现事务(transaction)功能。
 一般来说，就是如果你的系统不是严格要求缓存+数据库必须一致性的话，缓存可以稍微的跟数据库偶尔有不一致的情况，最好不要做这个方案，读请求和写请求串行化，串到一个内存队列里去，这样就可以保证一定不会出现不一致的情况
 
 串行化之后，就会导致系统的吞吐量会大幅度的降低，用比正常情况下多几倍的机器去支撑线上的一个请求。
-
-**参考：**
-
-- Java工程师面试突击第1季（可能是史上最好的Java面试突击课程）-中华石杉老师。视频地址见下面！
-  - 链接： https://pan.baidu.com/s/18pp6g1xKVGCfUATf_nMrOA 
-  - 密码：5i58
 
 ### 参考：
 
