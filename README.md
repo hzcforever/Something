@@ -1,6 +1,6 @@
 # Sword refers to Offer
 
-**勿在浮沙筑高台**
+**通过 GitHub Explore 搜集了若干 JAVA 基础研发相关的资料，也有我自己在春招找实习的过程中总结的部分原创文章，希望对今年找工作有一定的帮助，所有资料不用于任何商业营利。**
 
 - [《模式识别与机器学习》源码](https://github.com/hzcforever/Something/tree/master/PRML)
 
