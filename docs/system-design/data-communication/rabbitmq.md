@@ -156,7 +156,7 @@ headers 类型的交换器不依赖于路由键的匹配规则来路由消息，
 在官网下载然后上传到 Linux 上或者直接使用下面的命令下载对应的版本。
 
 ```shell
-[root@SnailClimb local]#wget http://erlang.org/download/otp_src_19.3.tar.gz
+[root@SnailClimb local]#wget http://erlang.org/download/otp_src_22.0.tar.gz
 ```
 
 erlang 官网下载：[http://www.erlang.org/downloads](http://www.erlang.org/downloads)  
@@ -164,13 +164,13 @@ erlang 官网下载：[http://www.erlang.org/downloads](http://www.erlang.org/do
  **2 解压 erlang 安装包**
 
 ```shell
-[root@SnailClimb local]#tar -xvzf otp_src_19.3.tar.gz
+[root@SnailClimb local]#tar -xvzf otp_src_22.0.tar.gz
 ```
 
 **3 删除 erlang 安装包**
 
 ```shell
-[root@SnailClimb local]#rm -rf otp_src_19.3.tar.gz
+[root@SnailClimb local]#rm -rf otp_src_22.0.tar.gz
 ```
 
 **4 安装 erlang 的依赖工具**
@@ -190,21 +190,21 @@ erlang 官网下载：[http://www.erlang.org/downloads](http://www.erlang.org/do
 对 erlang 进行安装环境的配置
 
 ```shell
-[root@SnailClimb otp_src_19.3]# 
+[root@SnailClimb otp_src_22.0]# 
 ./configure --prefix=/usr/local/erlang --without-javac
 ```
 
 **6 编译安装**
 
 ```shell
-[root@SnailClimb otp_src_19.3]# 
+[root@SnailClimb otp_src_22.0]# 
 make && make install
 ```
 
 **7 验证一下 erlang 是否安装成功了**
 
 ```shell
-[root@SnailClimb otp_src_19.3]# ./bin/erl
+[root@SnailClimb otp_src_22.0]# ./bin/erl
 ```
 运行下面的语句输出“hello world”
 
@@ -248,10 +248,7 @@ export ERL_HOME PATH
 
 **1. 下载rpm** 
 
-```shell
-wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.8/rabbitmq-server-3.6.8-1.el7.noarch.rpm
-```
-或者直接在官网下载
+直接在官网下载 rabbitmq-server-3.7.10-1.el7.noarch.rpm 
 
 https://www.rabbitmq.com/install-rpm.html[enter link description here](https://www.rabbitmq.com/install-rpm.html)
 
@@ -263,9 +260,8 @@ rpm --import https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
 紧接着执行：
 
 ```shell
-yum install rabbitmq-server-3.6.8-1.el7.noarch.rpm
+rpm -ivh --nodeps rabbitmq-server-3.7.10-1.el7.noarch.rpm
 ```
-中途需要你输入"y"才能继续安装。
 
 **3 开启 web 管理插件**
 
@@ -295,7 +291,7 @@ service rabbitmq-server status
 
 浏览器访问：http://你的ip地址:15672/
 
-默认用户名和密码： guest/guest;但是需要注意的是：guestuest用户只是被容许从localhost访问。官网文档描述如下：
+默认用户名和密码： guest/guest;但是需要注意的是：guestuest用户只是被容许从 localhost 访问。官网文档描述如下：
 
 ```shell
 “guest” user can only connect via localhost
