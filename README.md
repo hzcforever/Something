@@ -17,3 +17,5 @@
 - [框架与设计模式](https://github.com/hzcforever/Something/tree/master/docs/system-design)
 
 - [其它工具](https://github.com/hzcforever/Something/tree/master/docs/tools)
+
+- [HIT Coding contest for laboratory group](https://github.com/hzcforever/Something/tree/master/daily-coding-test)
